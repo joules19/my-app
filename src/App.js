@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import Products from "./pages/products";
+import Products from "./pages/Products";
 import "./App.css";
 import PaystackIntegration from "./components/PaystackIntegration";
 

@@ -1,24 +1,27 @@
 import { React, useState, useEffect } from "react";
 import PayStackPop from "@paystack/inline-js";
+import { Navigate } from "react-router-dom";
 
 const PaystackIntegration = () => {
   //const [isLoading, setIsLoading] = useState(false);
   const [email, setEmail] = useState("");
-  const [amount, setAmount] = useState("");
+  const [amount, setAmount] = useState(4900);
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [isSuccess, setIsSuccess] = useState(false);
 
   useEffect(() => {
     if (isSuccess) {
-      console.log("lll");
       setEmail("");
       setAmount("");
       setFirstName("");
       setLastName("");
-      console.log("lll");
+      
+      <Navigate to="/" replace={true} />
     }
   }, [isSuccess]);
+
+
 
   const payWithPaystack = (e) => {
     e.preventDefault();

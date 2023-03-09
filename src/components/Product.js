@@ -1,17 +1,15 @@
-import { React, useNavigate } from "react";
+import { React, useNavigate, useHistory } from "react";
+import { Link } from "react-router-dom";
 
 const Product = () => {
-  // const gotoCheckout = () => {
-  //   const navigate = useNavigate();
-  //   navigate();
-  // };
+ 
   return (
     <div class="w-full md:w-1/2 p-8  ">
       <div class="md:max-w-md mx-auto overflow-hidden rounded-3xl shadow-8xl shadow-md">
         <div class="p-9">
           <span class="mb-7 inline-block text-sm text-gray-500 font-semibold uppercase tracking-px">
             <small>Music </small>
-            <strong>X</strong> &nbsp; Basicx
+            <strong>X</strong> &nbsp; Basic
           </span>
           <ul>
             <li class="mb-4 flex items-center">
@@ -91,9 +89,6 @@ const Product = () => {
                   <span class="text-5xl leading-tight tracking-px-n">
                     ₦4900
                   </span>
-                  <span class="text-lg text-gray-500 leading-snug tracking-px-n">
-                    /mo
-                  </span>
                 </p>
                 <p class="font-medium text-gray-500 leading-relaxed">
                   Billed monthly
@@ -102,12 +97,13 @@ const Product = () => {
             </div>
           </div>
           <div class="mt-9">
-            <button
+            <Link
+            exact to="/checkout"
               class="py-4 px-5 w-full text-white font-semibold rounded-xl focus:ring focus:ring-indigo-300 bg-indigo-600 hover:bg-indigo-700 transition ease-in-out duration-200"
               type="button"
             >
               Make Paymnent
-            </button>
+            </Link>
           </div>
         </div>
       </div>

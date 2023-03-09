@@ -1,7 +1,10 @@
 import React from "react";
 import Product from "../components/Product";
+//import { useLocation } from "react-router-dom";
 
-const products = () => {
+const Products = () => {
+  // const location = useLocation();
+  // console.log(location.state);
   return (
     <section class="relative py-10 bg-blueGray-50 overflow-hidden">
       <div class="relative z-10 container px-4 mx-auto">
@@ -13,4 +16,4 @@ const products = () => {
   );
 };
 
-export default products;
+export default Products;
