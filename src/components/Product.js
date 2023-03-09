@@ -11,7 +11,7 @@ const Product = () => {
         <div class="p-9">
           <span class="mb-7 inline-block text-sm text-gray-500 font-semibold uppercase tracking-px">
             <small>Music </small>
-            <strong>X</strong> &nbsp; Lite
+            <strong>X</strong> &nbsp; Pro
           </span>
           <ul>
             <li class="mb-4 flex items-center">
